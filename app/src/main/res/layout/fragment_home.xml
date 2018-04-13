@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorPrimaryDark"
+        android:cacheColorHint="@color/green"
+        android:columnWidth="150dp"
+        android:fadingEdge="none"
+        android:fadingEdgeLength="2dp"
+        android:focusable="auto"
+        android:gravity="center"
+        android:horizontalSpacing="20dp"
+        android:numColumns="2"
+        android:paddingHorizontal="5dp"
+        android:paddingVertical="5dp"
+        android:theme="@style/AppTheme"
+        android:verticalSpacing="30dp"
+        android:visibility="visible" />
+
+
+</FrameLayout>
