@@ -21,8 +21,8 @@ import android.widget.ImageView;
 public class GridFragment extends Fragment {
 
     int[] images = {
-            R.drawable.health,
-            R.drawable.edu,
+            R.drawable.hospital,
+            R.drawable.education,
             R.drawable.emp,
             R.drawable.safety,
             R.drawable.wel,
