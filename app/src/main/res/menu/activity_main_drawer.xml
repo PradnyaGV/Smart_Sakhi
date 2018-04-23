@@ -20,6 +20,10 @@
             android:id="@+id/nav_manage"
             android:icon="@drawable/ic_forum_black_24dp"
             android:title="E-Samvad" />
+        <item
+            android:id="@+id/help"
+            android:icon="@drawable/ic_help_black_24dp"
+            android:title="Help-Line" />
     </group>
 
     <item android:title="Communicate">

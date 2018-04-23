@@ -43,6 +43,7 @@ public class HealthSchemes extends AppCompatActivity {
         setContentView(R.layout.schemes_recycler_view);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
+
         p=findViewById(R.id.progress);
 
         Intent i = getIntent();

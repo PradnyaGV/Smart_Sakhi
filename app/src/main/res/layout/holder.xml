@@ -10,28 +10,25 @@
         android:id="@+id/card_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="20dp"
+        android:layout_marginHorizontal="10dp"
         android:layout_marginVertical="10dp"
-        android:backgroundTint="@color/colorPrimaryDark"
         android:elevation="10dp"
         android:foregroundGravity="left"
         android:layerType="software"
         android:nextFocusDown="@color/colorPrimary"
-        android:paddingHorizontal="30dp"
-        android:paddingVertical="20dp"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="10dp"
         android:textAlignment="center"
         android:theme="?attr/actionModeStyle"
-        app:cardBackgroundColor="@color/colorPrimary"
-        app:cardCornerRadius="30dp"
+        app:cardCornerRadius="10dp"
         app:cardElevation="5dp"
         app:cardMaxElevation="10dp"
-        app:contentPadding="20dp">
+        app:contentPadding="10dp">
 
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/colorPrimaryDark">
+            android:layout_height="wrap_content">
 
             <ImageView
                 android:id="@+id/forwomen"
@@ -51,14 +48,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="30dp"
-                android:background="@color/colorPrimaryDark"
-                android:backgroundTint="@color/colorPrimaryDark"
-                android:elevation="3dp"
-                android:paddingHorizontal="30dp"
+                android:elevation="0dp"
+                android:paddingHorizontal="16dp"
                 android:paddingLeft="16dp"
                 android:paddingRight="16dp"
                 android:paddingTop="16dp"
-                android:paddingVertical="30dp"
+                android:paddingVertical="16dp"
                 android:text="Health Scheme Name"
                 android:textSize="20sp" />
 

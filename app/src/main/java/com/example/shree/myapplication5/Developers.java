@@ -13,14 +13,14 @@ public class Developers extends AppCompatActivity {
     String[] web = {
             "Pradnya Valsangkar",
             "Neha Pawar",
-
-
+            "Veena Kamurti",
+            "Aafrin Shaikh"
     } ;
     Integer[] imageId = {
             R.drawable.me,
             R.drawable.neha,
-
-
+            R.drawable.veena,
+            R.drawable.aafrin
 
     };
 

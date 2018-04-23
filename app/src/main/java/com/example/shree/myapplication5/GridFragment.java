@@ -24,9 +24,9 @@ public class GridFragment extends Fragment {
             R.drawable.hospital,
             R.drawable.education,
             R.drawable.emp,
-            R.drawable.safety,
+            R.drawable.safe,
             R.drawable.wel,
-            R.drawable.finance,
+            R.drawable.bank,
             R.drawable.labour,
             R.drawable.justice,
             R.drawable.family
@@ -35,13 +35,14 @@ public class GridFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        getActivity().setTitle("Smart Sakhi");
         View rootview = inflater.inflate(R.layout.recycler, container, false);
 
         // ImageView imageView = rootview.findViewById(R.id.coverimage);
         RecyclerView recyclerView = rootview.findViewById(R.id.itemslist);
 //        recyclerView.setNestedScrollingEnabled(false);
         recyclerView.setLayoutManager(new GridLayoutManager(this.getContext(), 2));
-        String[] items = {"Health", "Education", "Employment", "Safety", "Welfare", "Finance", "Labour", "Justice", "Family"};
+        String[] items = {"Health", "Education", "Employment", "Safety", "Welfare", "Finance", "Labor", "Justice", "Family"};
         recyclerView.setAdapter(new GridAdapter(this.getActivity().getApplicationContext(), items, images));
         return rootview;
     }

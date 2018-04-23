@@ -3,9 +3,7 @@ package com.example.shree.myapplication5;
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 
-import android.content.Context;
 import android.content.Intent;
-import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -113,7 +111,7 @@ public class GridAdapter extends RecyclerView.Adapter<GridAdapter.GridViewHolder
                     Log.d("Module Title", module_title);
                 }
 
-                if (module_title == "Labour") {
+                if (module_title == "Labor") {
                     Intent current_module = new Intent(mContext, HealthSchemes.class);
                     current_module.putExtra("module_title", module_title); // Pass Title
                     current_module.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
@@ -157,7 +155,7 @@ public class GridAdapter extends RecyclerView.Adapter<GridAdapter.GridViewHolder
         public GridViewHolder(View itemView) {
             super(itemView);
             textView = itemView.findViewById(R.id.grid_text);
-            iconimg = itemView.findViewById(R.id.grid_img);
+            iconimg = itemView.findViewById(R.id.img);
         }
 
 

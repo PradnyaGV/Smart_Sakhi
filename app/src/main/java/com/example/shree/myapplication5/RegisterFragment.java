@@ -20,6 +20,7 @@ public class RegisterFragment extends Fragment{
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
+        getActivity().setTitle("Woman & Child Development");
         View v=inflater.inflate(R.layout.fragment_register,container,false);
         mWebView=(WebView)v.findViewById(R.id.ww1);
         mWebView.loadUrl("http://www.wcd.nic.in/");

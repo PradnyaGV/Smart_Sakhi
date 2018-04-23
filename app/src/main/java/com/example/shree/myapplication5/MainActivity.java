@@ -1,5 +1,3 @@
-/*Smart Sakhi
-* Author : Pradnya Valsangkar*/
 package com.example.shree.myapplication5;
 
 import android.annotation.SuppressLint;
@@ -37,6 +35,7 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        setTitle("Smart Sakhi");
 
         Fragment fragment=new GridFragment();
         FragmentManager fragmentManager = getSupportFragmentManager();
@@ -54,7 +53,9 @@ public class MainActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
 
 
+
     }
+
 
 
     @Override
@@ -109,16 +110,25 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_camera) {
+            // Handle the camera action
+            //finish();
             fragment = new GridFragment();
+
+            //startActivity(new Intent(this, MainActivity.class));
 
         } else if (id == R.id.nav_gallery) {
           fragment = new RegisterFragment();
+            /*Intent i = new Intent(MainActivity.this, HealthSchemes.class);
+            startActivity(i);*/
 
         } else if (id == R.id.nav_slideshow) {
             fragment = new SFMeFragment();
 
         } else if (id == R.id.nav_manage) {
-            fragment = new ESamvadFragment();
+            fragment = new ESamvadFragment();}
+
+        else if (id == R.id.help) {
+                fragment = new HelpFragment();
 
         } else if (id == R.id.nav_share) {
             Intent sendIntent = new Intent();
